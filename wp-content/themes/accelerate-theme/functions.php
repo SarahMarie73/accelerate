@@ -34,11 +34,11 @@ function accelerate_setup() {
     'social-media'  => __( 'Social Media Nav', 'accelerate' ),
   ) );
 }
-add_action( 'after_setup_theme', 'accelerate_setup' ); 
+add_action( 'after_setup_theme', 'accelerate_setup' );
 
 /**
  * Register widget area.
- */
+*/
 function accelerate_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Widget Area', 'accelerate' ),
@@ -52,6 +52,7 @@ function accelerate_widgets_init() {
 }
 add_action( 'widgets_init', 'accelerate_widgets_init' );
 
+
 // defines custom markup for post comments
 function accelerate_comments($comment, $args, $depth) {
 	$comment  = '<li class="comment">';
@@ -63,6 +64,6 @@ function accelerate_comments($comment, $args, $depth) {
 	$comment .= '<p>' . get_comment_text() . '</p>';
 	$comment .= '</div>';
 	$comment .= '</li>';
- 
+
 	echo $comment;
 }
