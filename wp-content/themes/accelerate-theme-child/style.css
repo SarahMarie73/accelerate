@@ -15,7 +15,7 @@
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
     height: 440px;
-    margin: 0 0 80px;
+    margin: 0 0 40px;
     padding: 100px 0;
 }
 
@@ -81,4 +81,20 @@ div.case-study-images {
 div.case-study-images img {
   margin-bottom: 40px;
   border: 1px solid #dddddd;
+}
+
+/* Featured Work */
+
+.featured-work h4 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li.individual-featured-work {
+  text-align: justify;;
 }
